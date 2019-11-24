@@ -2,5 +2,6 @@
 ### implementation of linkedlist written in c language
 
 ## opeartion list
-   ### creating a node and adding each node at last position
-   ### deleting a first node
+   ### program-linkedlist.c
+      #### . creating a node and adding each node at last position
+      #### . deleting a first node
