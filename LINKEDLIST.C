@@ -12,6 +12,20 @@ struct node*n;
 n=(struct node*)malloc(sizeof(struct node));
 return(n);
 }
+struct node*reverselist()
+{
+struct node*t1=NULL;
+struct node*t2=NULL;
+while(start!=NULL)
+{
+t2= start->link;
+start->link=t1;
+t1=start;
+start=t2;
+}
+return(t1);
+}
+
 void insertnode()
 {
 struct node*temp,*t;
@@ -74,7 +88,8 @@ printf("enter your choice\n");
 printf("\n1-create a node");
 printf("\n2-delete first node");
 printf("\n3-view list");
-printf("\n4-exit");
+printf("\n4-reverse list");
+printf("\n5-exit");
 scanf("\n%d",&ch);
 return(ch);
 }
@@ -95,8 +110,11 @@ case 3:
 	viewlist();
 	break;
 case 4:
-	  exit(0);
+	 start=reverselist();
+	  break;
 
+case 5:
+	exit(0);
 default:
 	printf("wrong choice");
 	}getch();
