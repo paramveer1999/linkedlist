@@ -5,4 +5,4 @@
    ### program->>linkedlist.c
    #### * creating a node and adding each node at last position
    #### * deleting a first node
-   #### *reversing the linkedlist
+   #### * reversing the linkedlist
